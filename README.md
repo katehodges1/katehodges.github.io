@@ -1,5 +1,4 @@
 # Data Scientist
-
-### Education summary
+*summary*
 
 ### Projects
