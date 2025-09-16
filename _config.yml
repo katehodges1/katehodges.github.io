@@ -1,0 +1,5 @@
+ title: Kate Hodges
+ #logo:relative/path/to/headshot-circle.png
+ #description: Subtitle description - text below image
+ show_downloads: true
+ theme: jekyll-theme-minimal 
