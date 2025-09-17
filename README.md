@@ -8,7 +8,7 @@
 
 ### [Recycling or Relocation: Data Storytelling](https://github.com/katehodges1/Recycling-or-Relocation)
 *SUMMARY of work...*
-![Data Story Screenshot](assets/img/Data%20Storytelling2.png)
+![Data Story Screenshot](assets/img/Data%20Story%20Preview.png)
 
 ### [Cartography & Designing Basemaps](https://github.com/katehodges1/Cartography)
 *SUMMARY of work...*
