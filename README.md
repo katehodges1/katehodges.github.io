@@ -6,7 +6,8 @@
 *SUMMARY - dashboard, building on dissertation work, which predicts visitor footfall across hampstead heath under user specified time and temperature conditions*
 #EMBED SCREENSHOT HERE:![Screenshot](assets/img/dashboard-screenshot.png)
 
-### [Data Storytelling Coursework] #(upload/proj/and/link/to/repo/here)
+### [Recycling or Relocation: Data Storytelling](https://github.com/katehodges1/Recycling-or-Relocation)
 *SUMMARY of work...*
 
-### [Cartography & Designing Basemaps] #(upload/proj/and/link/to/repo/here)
+### [Cartography & Designing Basemaps](https://github.com/katehodges1/Cartography)
+*SUMMARY of work*
