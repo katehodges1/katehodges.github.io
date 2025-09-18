@@ -1,4 +1,4 @@
-# Data Scientist
+# Geospatial Data Scientist
 *summary*
 
 ## Projects
