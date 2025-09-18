@@ -3,12 +3,12 @@ R | Python | ArcGIS | QGIS
 
 ## Projects
 ### [Predicting Footfall on Hampstead Heath](https://github.com/katehodges1/Predicting-Hampstead-Heath-Footfall)
-Using the 6-month footfall dataset extensively explored in my dissertation, I built an interactive dashboard that serves as a working prototype to demonstrate how geospatial ML models can predict visitor flows and human movement through public spaces. Using a random forest model, the dashboard forecasts total hourly footfall in different areas of the park based on specified user conditions. With more longitudinal data, this model could be extended to forecast year round - supporting decisions like resource allocation, visitor management and infrastructure planning based on location specific patterns of behaviour.
+A geospatial ML model that predicts visitor flows through one of London's largest public spaces, which could support various decision making based on location specific patterns of behaviour. Building on my Dissertation, the interactive dashboard utilises a random forest model to forecast total hourly footfall in different areas of Hampstead Heath under specified user conditions.
 
 ![Dashboard Screenshot](assets/img/Dashboard%20Screenshot2.png)
 ---
 ### [Recycling or Relocation: Data Storytelling](https://github.com/katehodges1/Recycling-or-Relocation)
-This data story traces the journey of plastic waste from UK domestic production and export, to environmental impacts abroad, and its link to vast accumulation of waste in the Great Pacific Garbage Patch. Disparate global and UK waste, pollution and spatial datasets are transformed into a compelling narrative through the use of geospatial analysis and storytelling, to reveal the often obscured connections between domestic consumption and global ocean pollution - making a complex issue tangible for a general audience.
+Disparate global and UK waste, pollution and spatial datasets are transformed into a compelling narrative through the use of geospatial analysis and storytelling, to reveal the often obscured connections between domestic consumption and global ocean pollution.
 
 ![Data Story Screenshot](assets/img/Data%20Story%20Preview.png)
 ---
