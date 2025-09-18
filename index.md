@@ -5,7 +5,7 @@ R | Python | ArcGIS | QGIS
 ### [Predicting Footfall on Hampstead Heath](https://github.com/katehodges1/Predicting-Hampstead-Heath-Footfall)
 A geospatial ML model that predicts visitor flows through one of London's largest public spaces, which could support various decision making based on location specific patterns of behaviour. Building on my Dissertation, the interactive dashboard utilises a random forest model to forecast total hourly footfall in different areas of Hampstead Heath under specified user conditions.
 
-![Dashboard Screenshot](assets/img/Dashboard%20Screenshot2.png)
+![Dashboard Screenshot](assets/img/dashboard-screenshot.png)
 ---
 ### [Recycling or Relocation: Data Storytelling](https://github.com/katehodges1/Recycling-or-Relocation)
 Transformed disparate global and UK waste, pollution and spatial datasets into a compelling narrative through the use of geospatial analysis and storytelling, to reveal the often obscured connections between UK domestic consumption of plastic and global ocean pollution.
