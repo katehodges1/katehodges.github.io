@@ -14,4 +14,4 @@ description: >
   <br><br>
   <br><br>
 theme: jekyll-theme-minimal
-show_downloads: true
+classes: wide
