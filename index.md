@@ -1,5 +1,4 @@
 # Geospatial Data Scientist
-R | Python | ArcGIS | QGIS
 
 ## Projects
 ### [Predicting Footfall on Hampstead Heath](https://github.com/katehodges1/Predicting-Hampstead-Heath-Footfall)
