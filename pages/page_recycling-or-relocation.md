@@ -4,12 +4,12 @@ This map series highlights the little-known reality of UK plastic waste: genuine
 
 This was one of my favourite peices of coursework from my final year at UCL.
 
-![Introduction](/assets/data-story-a.png)
-![Map 1](/assets/data-story-b.png)
-![Map 2](/assets/data-story-c.png)
-![Map 3](/assets/data-story-d.png)
-![Map 4](/assets/data-story-e.png)
-![Map 5](/assets/data-story-f.png)
-![Auto-Critique](/assets/data-story-g.png)
-![In Text References](/assets/data-story-h.png)
-![Data Sources](/assets/data-story-i.png)
+![Introduction](/assets/img/data-story-a.png)
+![Map 1](/assets/img/data-story-b.png)
+![Map 2](/assets/img/data-story-c.png)
+![Map 3](/assets/img/data-story-d.png)
+![Map 4](/assets/img/data-story-e.png)
+![Map 5](/assets/img/data-story-f.png)
+![Auto-Critique](/assets/img/data-story-g.png)
+![In Text References](/assets/img/data-story-h.png)
+![Data Sources](/assets/img/data-story-i.png)
