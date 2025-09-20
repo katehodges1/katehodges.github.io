@@ -32,8 +32,8 @@ The basemap was created by blending two topographic layers - both versions of th
   2. **Elevation layer**: From a copy of the same raster layer and rainforest photo, I devised a colour palette to represent land and sea elevations - toning down colours slightly to ensure the basemap remained subtle enough.
 
 <p align='center'>
-  <img src=assets/img/colour%20palette%20inspo.png alt="Palette Inspo" width="400" />
-  <img src=assets/img/basemap%20layers.png alt="Topographic Layers" width="500" />  
+  <img src=/assets/img/colour%20palette%20inspo.png alt="Palette Inspo" width="400" />
+  <img src=/assets/img/basemap%20layers.png alt="Topographic Layers" width="500" />  
 </p>
 
 By layering and blending these, the basemap successfully evokes the local environment, whilst being subtle enough to allow the road and water networks to retain the map's overall purpose.
