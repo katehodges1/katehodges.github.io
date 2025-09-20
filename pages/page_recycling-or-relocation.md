@@ -3,12 +3,12 @@
 
 ** brief technical/ methodological introduction **
 
-<img src=/assets/img/data-story-a.png alt="Introduction" width="1000" />
-<img src=/assets/img/data-story-b.png alt="Map 1" width="1000" />
-<img src=/assets/img/data-story-c.png alt="Map 2" width="1000" />
-<img src=/assets/img/data-story-d.png alt="Map 3" width="1000" />
-<img src=/assets/img/data-story-e.png alt="Map 4" width="1000" />
-<img src=/assets/img/data-story-f.png alt="Map 5" width="1000" />
-<img src=/assets/img/data-story-g.png alt="Auto-Critique" width="1000" />
-<img src=/assets/img/data-story-h.png alt="In Text References" width="1000" />
-<img src=/assets/img/data-story-i.png alt="Data Sources" width="1000" />
+<img src="/assets/img/data-story-a.png?raw=true" alt="Introduction" width="1000" />
+<img src="/assets/img/data-story-b.png?raw=true" alt="Map 1" width="1000" />
+<img src="/assets/img/data-story-c.png?raw=true" alt="Map 2" width="1000" />
+<img src="/assets/img/data-story-d.png?raw=true" alt="Map 3" width="1000" />
+<img src="/assets/img/data-story-e.png?raw=true" alt="Map 4" width="1000" />
+<img src="/assets/img/data-story-f.png?raw=true" alt="Map 5" width="1000" />
+<img src="/assets/img/data-story-g.png?raw=true" alt="Auto-Critique" width="1000" />
+<img src="/assets/img/data-story-h.png?raw=true" alt="In Text References" width="1000" />
+<img src="/assets/img/data-story-i.png?raw=true" alt="Data Sources" width="1000" />
