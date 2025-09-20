@@ -3,12 +3,8 @@
 
 When people think about data science, they often jump straight to algorithms and models. However, even the most cutting-edge model is near useless if people can’t interpret its results. That’s where good design comes in, and as a Geographer with a particular interest in spatial data, I’ve developed a strong appreciation for cartographic design.
 
-<br>
-
 This is a small but meaninful project I undertook as part of my work for the Cartography & Data Visualisation module in my final year at UCL. It was formative in crystallising my appreciation of how careful design decisions (like a consideration of visual hierarchy, colour theory and the role of basemaps for spatial data) make all the difference when it comes to work being uninterpretable and overlooked versus intuitive and able to drive decision making. 
 Though the data itself is extremely simple in this case, the process helped developed a strong foundation that I'll be able to apply to more analytically complex projects in the future. 
-
-<br>
 
 I chose to map Port Moresby, Papua New Guinea for this exercise - a rarely represented city, and somewhere with interesting surrounding terrain which provides a strong showcase for the potential of thoughtful basemap design. 
 <br>
