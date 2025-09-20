@@ -4,12 +4,12 @@ This map series highlights the little-known reality of UK plastic waste: genuine
 
 This was one of my favourite peices of coursework from my final year at UCL.
 
-![Introduction](/assets/img/data-story-a.png)
-![Map 1](/assets/img/data-story-b.png)
-![Map 2](/assets/img/data-story-c.png)
-![Map 3](/assets/img/data-story-d.png)
-![Map 4](/assets/img/data-story-e.png)
-![Map 5](/assets/img/data-story-f.png)
-![Auto-Critique](/assets/img/data-story-g.png)
-![In Text References](/assets/img/data-story-h.png)
-![Data Sources](/assets/img/data-story-i.png)
+<img src=/assets/img/data-story-a.png alt="Introduction" width="600" />
+<img src=/assets/img/data-story-b.png alt="Map 1" width="600" />
+<img src=/assets/img/data-story-c.png alt="Map 2" width="600" />
+<img src=/assets/img/data-story-d.png alt="Map 3" width="600" />
+<img src=/assets/img/data-story-e.png alt="Map 4" width="600" />
+<img src=/assets/img/data-story-f.png alt="Map 5" width="600" />
+<img src=/assets/img/data-story-g.png alt="Auto-Critique" width="600" />
+<img src=/assets/img/data-story-h.png alt="In Text References" width="600" />
+<img src=/assets/img/data-story-i.png alt="Data Sources" width="600" />
