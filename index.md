@@ -1,25 +1,28 @@
 # Geospatial Data Scientist
-As a Geographer, tackling complex, real world problems with a range of interdisciplinary skills has become second nature to me. I’m passionate about blending analytical tools with a touch of design & creativity in order to make sense of the world - harnessing machine learning, geospatial analytics & storytelling to transform messy, complex data into powerful insights!
+As a Geographer, tackling complex, real world problems with a range of interdisciplinary skills has become second nature to me. I’m passionate about blending analytical tools with a touch of design & creativity in order to make sense of the world - harnessing **machine learning**, **geospatial analytics** & **storytelling** to transform messy, complex data into powerful insights!
+
 <br>
+
 Welcome to my portfolio, where I’ll be sharing and discussing some of my key Data Science projects. If you're interested, click on a project title to find out more.
 <br>
 ## Projects
 ### [Predicting Footfall on Hampstead Heath](https://github.com/katehodges1/Predicting-Hampstead-Heath-Footfall)
-A geospatial ML model that predicts visitor flows through one of London's largest public spaces, which could support various decision making based on location specific patterns of behaviour. Building on my Dissertation, the interactive dashboard utilises a random forest model to forecast total hourly footfall in different areas of Hampstead Heath under specified user conditions.
+Big Data | Random Forest | RShiny Dashboard 
 
 ![Dashboard Screenshot](assets/img/dashboard-screenshot.png)
 
 ---
 
-### [Recycling or Relocation: Data Storytelling](https://github.com/katehodges1/Recycling-or-Relocation)
-Transformed disparate global and UK waste, pollution and spatial datasets into a compelling narrative through the use of geospatial analysis and storytelling, to reveal the often obscured connections between UK domestic consumption of plastic and global ocean pollution.
+### [Recycling or Relocation: The UK's 'Recycled Plastics & Global Ocean Pollution](https://github.com/katehodges1/Recycling-or-Relocation)
+GIS | Data Storytelling
 
 ![Data Story Screenshot](assets/img/Data%20Story%20Preview.png)
 
 ---
 
 ### [Cartography & Designing Basemaps](https://github.com/katehodges1/Cartography)
-Transformed raw spatial data into a visually compelling and intuitive map & underlying basemap, using thoughtful design, colour theory and visual hierarchy.
+GIS | Cartography & Data Visualisation
+
 
 ![Screenshot](assets/img/Port%20Moresby.png)
 
