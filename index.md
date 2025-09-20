@@ -13,7 +13,7 @@ Big Data | Random Forest | RShiny Dashboard
 
 ---
 
-### [Recycling or Relocation: The UK's 'Recycled Plastics & Global Ocean Pollution](https://github.com/katehodges1/Recycling-or-Relocation)
+### [Recycling or Relocation: The UK's 'Recycled Plastics & Global Ocean Pollution](/pages/page_recycling-or-relocation.md)
 GIS | Data Storytelling
 
 ![Data Story Screenshot](assets/img/Data%20Story%20Preview.png)
