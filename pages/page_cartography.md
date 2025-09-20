@@ -51,4 +51,4 @@ These decisions produced a visual hierarchy so intuitive that a legend is not re
 
 Here is the final map - though the data in this case is very simple, this exercise highlights the subtle decisions that can take maps visualisations from plain to compelling; a vital step in making any Data Science project truly impactful.
 
-![Final Map](Port%20Moresby.png)
+![Final Map](/assets/img/Port%20Moresby.png)
