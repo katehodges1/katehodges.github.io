@@ -20,7 +20,7 @@ GIS | Data Storytelling
 
 ---
 
-### [Cartography & Designing Basemaps](https://github.com/katehodges1/Cartography)
+### [Cartography & Designing Basemaps](/pages/page_cartography.md)
 GIS | Cartography & Data Visualisation
 
 
