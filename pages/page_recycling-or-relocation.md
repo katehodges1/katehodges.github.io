@@ -1,8 +1,11 @@
-Recycling or Relocation?
-*A 5 part Map Series*
+# Recycling or Relocation?
+### *A 5 part Map Series*
+
+---
+
 This map series highlights the little-known reality of UK plastic waste: genuine recycling is far less common than it might be assumed. By tracing plastic waste from a national (UK) to global scale, it illuminates how our individual actions and choices are fundamentally connected to global environmental issues - despite it being easy to feel disconnected at time.
 
-This was one of my favourite peices of coursework from my final year at UCL.
+---
 
 <img src=/assets/img/data-story-a.png alt="Introduction" width="1000" />
 <img src=/assets/img/data-story-b.png alt="Map 1" width="1000" />
