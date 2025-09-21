@@ -22,6 +22,6 @@ GIS | Data Storytelling
 GIS | Cartography & Data Visualisation
 
 
-![Screenshot](assets/img/Port%20Moresby.png)
+![Screenshot](assets/img/port-moresby.png)
 
 ---
