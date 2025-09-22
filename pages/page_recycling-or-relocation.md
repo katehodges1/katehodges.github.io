@@ -3,12 +3,12 @@
 
 ** brief technical/ methodological introduction **
 
-<img src="/assets/img/data-story-a.png" alt="Introduction" width="1000" />
-<img src="/assets/img/data-story-b.png" alt="Map 1" width="1000" />
-<img src="/assets/img/data-story-c.png" alt="Map 2" width="1000" />
-<img src="/assets/img/data-story-d.png" alt="Map 3" width="1000" />
-<img src="/assets/img/data-story-e.png" alt="Map 4" width="1000" />
-<img src="/assets/img/data-story-f.png" alt="Map 5" width="1000" />
-<img src="/assets/img/data-story-g.png" alt="Auto-Critique" width="1000" />
-<img src="/assets/img/data-story-h.png" alt="In Text References" width="1000" />
-<img src="/assets/img/data-story-i.png" alt="Data Sources" width="1000" />
+<img src="https://raw.githubusercontent.com/Uldur-hub/portfolio/main/assets/img/data-story-a.png" alt="Introduction" width="1000" />
+<img src="https://raw.githubusercontent.com/Uldur-hub/portfolio/main/assets/img/data-story-b.png" alt="Map 1" width="1000" />
+<img src="https://raw.githubusercontent.com/Uldur-hub/portfolio/main/assets/img/data-story-c.png" alt="Map 2" width="1000" />
+<img src="https://raw.githubusercontent.com/Uldur-hub/portfolio/main/assets/img/data-story-d.png" alt="Map 3" width="1000" />
+<img src="https://raw.githubusercontent.com/Uldur-hub/portfolio/main/assets/img/data-story-e.png" alt="Map 4" width="1000" />
+<img src="https://raw.githubusercontent.com/Uldur-hub/portfolio/main/assets/img/data-story-f.png" alt="Map 5" width="1000" />
+<img src="https://raw.githubusercontent.com/Uldur-hub/portfolio/main/assets/img/data-story-g.png" alt="Auto-Critique" width="1000" />
+<img src="https://raw.githubusercontent.com/Uldur-hub/portfolio/main/assets/img/data-story-h.png" alt="In Text References" width="1000" />
+<img src="https://raw.githubusercontent.com/Uldur-hub/portfolio/main/assets/img/data-story-i.png" alt="Data Sources" width="1000" />
