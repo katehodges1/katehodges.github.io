@@ -39,7 +39,7 @@ Data for this project was compiled from **3 key sources** joined and cleaned in 
   </div>
 
   <div style="flex: 1;">
-    <img src="https://raw.githubusercontent.com/katehodges1/katehodges.github.io/main/assets/img/dashboard/spatial-feature-quantification.png" alt="Example image" style="max-width: 50%; height: auto;"/>
+    <img src="https://raw.githubusercontent.com/katehodges1/katehodges.github.io/main/assets/img/dashboard/spatial-feature-quantification.png" alt="Example image" style="max-width: 100%; height: auto;"/>
   </div>
   
   </div>
