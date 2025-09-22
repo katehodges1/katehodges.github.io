@@ -37,7 +37,7 @@ The human location data for this project was kindly provided by **[WhereData](ht
 This analysis was done using R - due to technical restraints of accessing python and setting up virtual environments on remote desktop connection (required for computing power to handle such a huge dataset)
   - *step 1 was to write a [tracking function](link/to/code) that emulated function of python's mlflow*
 
-## Exploratory Analysis
+### Exploratory Analysis
 [link to code here](link/to/code)
 - KEY GRAPHS FROM DISS
 - HIERARCHICAL CLUSTERING
@@ -45,7 +45,7 @@ This analysis was done using R - due to technical restraints of accessing python
 - main quirk of the data??? → considerations to take forwards to predictive modelling
   - discrepancy in reporting of cross country event...
 
-## Devising a Predictive Model
+### Devising a Predictive Model
 [link to code here](link/to/code)
 Random forest model selected because...
 
@@ -64,7 +64,7 @@ Random forest model selected because...
 - once best combination of features selected for modelling, hyperparameter tuning..
     - *manually, because of computing constrains w gridsearch or CV*
  
-## final dashboard...
+### final dashboard...
 
 
 
