@@ -28,8 +28,8 @@ The basemap was created by blending two topographic layers - both versions of th
   2. **Elevation layer**: From a copy of the same raster layer and rainforest photo, I devised a colour palette to represent land and sea elevations - toning down colours slightly to ensure the basemap remained subtle enough.
 
 <p align='center'>
-  <img src="/assets/img/colour-palette-inspo.png" alt="Palette Inspo" width="398" />
-  <img src="/assets/img/basemap-layers.png" alt="Topographic Layers" width="500" />  
+  <img src="https://raw.githubusercontent.com/Uldur-hub/portfolio/main/assets/img/colour-palette-inspo.png" alt="Palette Inspo" width="398" />
+  <img src="https://raw.githubusercontent.com/Uldur-hub/portfolio/main/assets/img/basemap-layers.png" alt="Topographic Layers" width="500" />  
 </p>
 
 By layering and blending these, the basemap successfully evokes the local environment, whilst being subtle enough to allow the road and water networks to retain the map's overall purpose.
@@ -47,4 +47,4 @@ These decisions produced a visual hierarchy so intuitive that a legend is not re
 
 Here is the final map - though the data in this case is very simple, this exercise highlights the subtle decisions that can take maps visualisations from plain to compelling; a vital step in making any Data Science project truly impactful.
 
-<img src="/assets/img/port-moresby.png" alt="Final Map" width="500" />
+![Map](https://raw.githubusercontent.com/Uldur-hub/portfolio/main/assets/img/portmoresby.png)
