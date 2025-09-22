@@ -10,27 +10,39 @@ I chose this topic because I wanted to combine my passion for the outdoors with 
 Whilst my dissertatioin was an extensive exploratory analysis, and an in depth look at the merits of big data versus other more traditional research methods (namely in person observations), I wanted to push the potentials of the dataset further, to explore how more complex modelling might be applied, to enable the dataset to serve as a tool that could aid future planning/ logistics/ resource allocation etc.
 
 ## The Data
-Data for this project was compiled from **3 key sources** [joined and cleaned in R](link/to/code):
+Data for this project was compiled from **3 key sources** joined and cleaned in R [*(see code for this workflow here)*]([link/to/code](https://github.com/katehodges1/katehodges.github.io/main/Predicting-Hampstead-Heath-Footfall/preprocessing):
 
 
-#### *Footfall Data*
-The human location data for this project was kindly provided by **[WhereData](https://www.wheredata.co.uk/)**
-  - this was obviously time stamped...
-    
-#### *Weather Data*
-- Weather (temperature, preicipitation) at hourly intervals from [VisualCrossing.com]
-
-#### *Spatial Features* 
-- Physical Features of the Heath (quantified using QGIS)....
--   - QGIS was used to trace the heaths key physical features (according to the literature on park visitation & informed by observations of how people use the space)
+  #### 1. *Footfall Data*
+  The human location data for this project was kindly provided by **[WhereData](https://www.wheredata.co.uk/)**
+  - Footfall estimates are aggregated to hourly counts, at the spatial resolution of [Uber's H3 Grid Level 10](https://www.uber.com/en-GB/blog/h3/)
+  - The data is sourced from anonymised, consented-to app location signals, collected from a panel that is representative of the UK population
       
+  #### 2. *Weather Data*
+  Historical hourly weather records were downloaded in batches from [VisualCrossing.com]
+  - The dataset contained 10+ variables, but only **temperature** and **precipitation** were included in the final model - following extensive exploration
+  
+  #### 3. *Spatial Features* 
+  The physical features within each hexagon cell were quantified using QGIS
 
-<img src="https://raw.githubusercontent.com/katehodges1/katehodges.github.io/main/assets/img/dashboard/spatial-feature-quantification.png" alt="QGIS" width="500" />
-
-    **spatial calculations then applied - to quantify these features realtive to the hex cell granularity of the data**
-      - point features (benches, cafes, attractions) → point in polygon calc
-      - line feature (paths, boundaries…) → length in polygon calc
-      - polygon features → area in polygon overlap calc
+  <div style="display: flex; align-items: flex-start;">
+  
+    <div style="flex: 1; padding-right: 20px;">
+      <p>
+        OSM was traced to vectorise features, before forming cell overlap calculations to quantify them according to the type of feature:
+      </p>
+      <ul>
+        <li>- point features (benches, cafes, attractions) → point in polygon calc</li>
+        <li>- line feature (paths, boundaries…) → length in polygon calc</li>
+        <li>- polygon features → area in polygon overlap calc</li>
+      </ul>
+    </div>
+  
+    <div style="flex: 1;">
+      <img src="https://raw.githubusercontent.com/katehodges1/katehodges.github.io/main/assets/img/dashboard/spatial-feature-quantification.png" alt="Example image" style="max-width: 100%; height: auto;"/>
+    </div>
+  
+  </div>
 
 
 ## Methodology
