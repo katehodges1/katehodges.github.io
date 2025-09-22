@@ -7,7 +7,7 @@
 ### The Problem Space & Motivations for Tackling it
 I chose this topic because I wanted to combine my passion for the outdoors with data science, and mobile phone location data is increasingly central to business decisions and planning, so I was excited to get some hands on experience with it. 
 
-Whilst my dissertatioin was an extensive exploratory analysis, and an in depth look at the merits of big data versus other more traditional research methods (namely in person observations...), I wanted to explore how more complex modelling might be applied to this dataset, in a way that would enable it to act as a tool that could aid future planning/ logistics/ resource allocation etc.
+Whilst my dissertatioin was an extensive exploratory analysis, and an in depth look at the merits of big data versus other more traditional research methods (namely in person observations), I wanted to push the potentials of the dataset further, to explore how more complex modelling might be applied, to enable the dataset to serve as a tool that could aid future planning/ logistics/ resource allocation etc.
 
 ## The Data
 Data for this project was compiled from **3 key sources** [joined and cleaned in R](link/to/code):
@@ -24,7 +24,7 @@ The human location data for this project was kindly provided by **[WhereData](ht
 - Physical Features of the Heath (quantified using QGIS)....
 -   - QGIS was used to trace the heaths key physical features (according to the literature on park visitation & informed by observations of how people use the space)
       
-    SCREENSHOT OF QGIS
+    ![SCREENSHOT OF QGIS](https://...)
     **spatial calculations then applied - to quantify these features realtive to the hex cell granularity of the data**
       - point features (benches, cafes, attractions) → point in polygon calc
       - line feature (paths, boundaries…) → length in polygon calc
