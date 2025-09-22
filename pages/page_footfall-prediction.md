@@ -14,7 +14,7 @@ Data for this project was compiled from **3 key sources** [joined and cleaned in
 
 
 #### *Footfall Data*
-The human location data for this project was kindly provided by **[WhereData]**(https://www.wheredata.co.uk/) 
+The human location data for this project was kindly provided by **[WhereData](https://www.wheredata.co.uk/)**
   - this was obviously time stamped...
     
 #### *Weather Data*
@@ -64,7 +64,7 @@ Random forest model selected because...
 - once best combination of features selected for modelling, hyperparameter tuning..
     - *manually, because of computing constrains w gridsearch or CV*
  
-#### *Devising a Predictive Model*
-- final dashboard...
+#### *final dashboard...*
+
 
 
