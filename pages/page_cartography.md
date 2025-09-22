@@ -28,7 +28,7 @@ The basemap was created by blending two topographic layers - both versions of th
   2. **Elevation layer**: From a copy of the same raster layer and rainforest photo, I devised a colour palette to represent land and sea elevations - toning down colours slightly to ensure the basemap remained subtle enough.
 
 <p align='center'>
-  <img src="https://raw.githubusercontent.com/katehodges1/katehodges.github.io/main/assets/img/colour-palette-inspo.png" alt="Palette Inspo" width="390" />
+  <img src="https://raw.githubusercontent.com/katehodges1/katehodges.github.io/main/assets/img/colour-palette-inspo.png" alt="Palette Inspo" width="330" />
   <img src="https://raw.githubusercontent.com/katehodges1/katehodges.github.io/main/assets/img/basemap-layers.png" alt="Topographic Layers" width="450" />  
 </p>
 
