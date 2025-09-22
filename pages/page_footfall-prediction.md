@@ -13,33 +13,34 @@ Whilst my dissertatioin was an extensive exploratory analysis, and an in depth l
 Data for this project was compiled from **3 key sources** joined and cleaned in R [*(see code for this workflow here)*]([link/to/code](https://github.com/katehodges1/katehodges.github.io/main/Predicting-Hampstead-Heath-Footfall/preprocessing):
 
 
-  #### 1. *Footfall Data*
-  The human location data for this project was kindly provided by **[WhereData](https://www.wheredata.co.uk/)**
-  - Footfall estimates are aggregated to hourly counts, at the spatial resolution of [Uber's H3 Grid Level 10](https://www.uber.com/en-GB/blog/h3/)
-  - The data is sourced from anonymised, consented-to app location signals, collected from a panel that is representative of the UK population
-      
-  #### 2. *Weather Data*
-  Historical hourly weather records were downloaded in batches from [VisualCrossing.com]
-  - The dataset contained 10+ variables, but only **temperature** and **precipitation** were included in the final model - following extensive exploration
-  
-  #### 3. *Spatial Features* 
-  The physical features within each hexagon cell were quantified using QGIS
+#### 1. *Footfall Data*
+The human location data for this project was kindly provided by **[WhereData](https://www.wheredata.co.uk/)**
+- Data was shared for the London boroughs of Camden and Barnet, covering July - December 2023 (providing a 6-month test case through which to explore the tool's potential, with clear value if this were to be extended to a full year and beyond)
+- Footfall estimates are aggregated to hourly counts, at the spatial resolution of [Uber's H3 Grid Level 10](https://www.uber.com/en-GB/blog/h3/)
+- The data is sourced from anonymised, consented-to app location signals, collected from a panel that is representative of the UK population
 
+    
+#### 2. *Weather Data*
+Historical hourly weather records were downloaded in batches from [VisualCrossing.com]
+- The dataset contained 10+ variables, but only **temperature** and **precipitation** were included in the final model - following extensive exploration
+
+#### 3. *Spatial Features* 
   <div style="display: flex; align-items: flex-start;">
   
   <div style="flex: 1; padding-right: 20px;">
     <p>
+      The physical features within each hexagon cell were quantified using QGIS.
       OSM was traced to vectorise features, before forming cell overlap calculations to quantify them according to the type of feature:
     </p>
     <ul>
-      <li> point features (benches, cafes, attractions) → point in polygon calc</li>
-      <li> line feature (paths, boundaries…) → length in polygon calc</li>
-      <li> polygon features → area in polygon overlap calc</li>
+      <li> Point features (benches, cafes, attractions) → Point in polygon calc</li>
+      <li> Line feature (paths, boundaries…) → Length in polygon calc</li>
+      <li> Polygon features → Area in polygon overlap calc</li>
     </ul>
   </div>
 
   <div style="flex: 1;">
-    <img src="https://raw.githubusercontent.com/katehodges1/katehodges.github.io/main/assets/img/dashboard/spatial-feature-quantification.png" alt="Example image" style="max-width: 100%; height: auto;"/>
+    <img src="https://raw.githubusercontent.com/katehodges1/katehodges.github.io/main/assets/img/dashboard/spatial-feature-quantification.png" alt="Example image" style="max-width: 50%; height: auto;"/>
   </div>
   
   </div>
@@ -48,11 +49,8 @@ Data for this project was compiled from **3 key sources** joined and cleaned in 
 ## Methodology
 **Overview**: Following extensive EDA which formed the bulk of the dissertation, Random Forest model was used to make predictions for the R Shiny dashboard.
 
-This analysis was done using R - due to technical restraints of accessing python and setting up virtual environments on remote desktop connection (required for computing power to handle such a huge dataset)
-  - *step 1 was to write a [tracking function](link/to/code) that emulated function of python's mlflow*
-
 ### Exploratory Analysis
-[link to code here](link/to/code)
+[link to code here](https://github.com/katehodges1/katehodges.github.io/main/Predicting-Hampstead-Heath-Footfall)
 - KEY GRAPHS FROM DISS
 <img src="https://raw.githubusercontent.com/katehodges1/katehodges.github.io/main/assets/img/dashboard/overall-visitation-plot.png" alt="overall visit plot" width="500" />
 <img src="https://raw.githubusercontent.com/katehodges1/katehodges.github.io/main/assets/img/dashboard/weather-scatters.png" alt="weather scatters" width="500" />
@@ -63,12 +61,17 @@ This analysis was done using R - due to technical restraints of accessing python
 
 ### Devising a Predictive Model
 [link to code here](link/to/code)
+
 Random forest model selected because...
 
-- key steps in modelling...
+#### Tracking Experiments
+This analysis was done using R - due to technical restraints of accessing Python and setting up virtual environments on remote desktop connection that was required for sufficient computing power to handle the dataset.
+  - *step 1 was to write a [tracking function](https://github.com/katehodges1/katehodges.github.io/main/Predicting-Hampstead-Heath-Footfall/utils) that emulated function of Python's MLflow*
+    
+#### Approach to modelling
 - just weather, just physical, then combined
 - had to remove any cells where more than x% contained non park 
-    - this massively improved performance - removed additional noise (bc i hadnt quantified features external to          the park beyond simply being 'non park'
+    - this massively improved performance - removed additional noise (bc i hadnt quantified features external to the park beyond simply being 'non park'
     - **perhaps if i classified the spatial features external to the park then this could be improved… / the
       selection of weather as cruical predictor variables was from extensively consulting the literature… if
       prediciton task weas being done for more urban areas, would have to think carefully about which sort of
