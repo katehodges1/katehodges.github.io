@@ -24,7 +24,8 @@ The human location data for this project was kindly provided by **[WhereData](ht
 - Physical Features of the Heath (quantified using QGIS)....
 -   - QGIS was used to trace the heaths key physical features (according to the literature on park visitation & informed by observations of how people use the space)
       
-    ![SCREENSHOT OF QGIS](https://...)
+    ![SCREENSHOT OF QGIS](https://katehodges1/katehodges.github.io/main/assets/img/dashboard/spatial-feature-quantification.png)
+    
     **spatial calculations then applied - to quantify these features realtive to the hex cell granularity of the data**
       - point features (benches, cafes, attractions) → point in polygon calc
       - line feature (paths, boundaries…) → length in polygon calc
@@ -40,6 +41,8 @@ This analysis was done using R - due to technical restraints of accessing python
 ### Exploratory Analysis
 [link to code here](link/to/code)
 - KEY GRAPHS FROM DISS
+- ![OVERALL VISIT PLOT](https://katehodges1/katehodges.github.io/main/assets/img/dashboard/overall-visitation-plot.png)
+- ![WEATHER SCATTER PLOT](https://katehodges1/katehodges.github.io/main/assets/img/dashboard/weather-scatters.png)
 - HIERARCHICAL CLUSTERING
     - *from this, it was clear that areas with similar spatial features exhibited similar visitation regimes -     distinct between groups (formed good clusters - obvious that spatial features must be included in any good model)*
 - main quirk of the data??? → considerations to take forwards to predictive modelling
