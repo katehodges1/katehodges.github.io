@@ -27,20 +27,20 @@ Data for this project was compiled from **3 key sources** joined and cleaned in 
 
   <div style="display: flex; align-items: flex-start;">
   
-    <div style="flex: 1; padding-right: 20px;">
-      <p>
-        OSM was traced to vectorise features, before forming cell overlap calculations to quantify them according to the type of feature:
-      </p>
-      <ul>
-        <li>- point features (benches, cafes, attractions) → point in polygon calc</li>
-        <li>- line feature (paths, boundaries…) → length in polygon calc</li>
-        <li>- polygon features → area in polygon overlap calc</li>
-      </ul>
-    </div>
-  
-    <div style="flex: 1;">
-      <img src="https://raw.githubusercontent.com/katehodges1/katehodges.github.io/main/assets/img/dashboard/spatial-feature-quantification.png" alt="Example image" style="max-width: 100%; height: auto;"/>
-    </div>
+  <div style="flex: 1; padding-right: 20px;">
+    <p>
+      OSM was traced to vectorise features, before forming cell overlap calculations to quantify them according to the type of feature:
+    </p>
+    <ul>
+      <li>- point features (benches, cafes, attractions) → point in polygon calc</li>
+      <li>- line feature (paths, boundaries…) → length in polygon calc</li>
+      <li>- polygon features → area in polygon overlap calc</li>
+    </ul>
+  </div>
+
+  <div style="flex: 1;">
+    <img src="https://raw.githubusercontent.com/katehodges1/katehodges.github.io/main/assets/img/dashboard/spatial-feature-quantification.png" alt="Example image" style="max-width: 100%; height: auto;"/>
+  </div>
   
   </div>
 
