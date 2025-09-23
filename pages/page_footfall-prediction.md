@@ -72,17 +72,17 @@ In my dissertation, I also applied a **hierarchical clustering** algorithm to th
 ### Devising a Predictive Model
 You can view the full code [here](https://github.com/katehodges1/katehodges.github.io/main/Predicting-Hampstead-Heath-Footfall)
 
-Random Forest model was selected for this task due to its ability to capture complex, non-linear relationships.
+**→** Random Forest model was selected for this task due to its ability to capture complex, non-linear relationships.
 
 
 #### Tracking Experiments
 Due to technical restraints with setting up virtual environments on the remote desktop I was working on (required for sufficient computing power to handle the dataset), this ML model was built using R (my first and likely last experience doing so: though its possible in R, I found that Python syntax definitely lends itself more intuitively to ML!) 
 
-  → *step 1 was to write a [tracking function](https://github.com/katehodges1/katehodges.github.io/main/Predicting-Hampstead-Heath-Footfall/utils) that emulated function of Python's MLflow*
+  **→** *step 1 was to write a [tracking function](https://github.com/katehodges1/katehodges.github.io/main/Predicting-Hampstead-Heath-Footfall/utils) that emulated function of Python's MLflow*
 
     
 #### Approach to modelling
-→ I took a random 80/20 train test split. Whilst I considered stratification (which can be useful particularly on smaller or highly imbalanced datasets) in this case (given the hundereds of thousands of observations) it risked over-engineering the split and potentially artificially inflating performance. A random split provided a more robust assssment of generalisability. 
+**→** I took a random 80/20 train test split. Whilst I considered stratification (which can be useful particularly on smaller or highly imbalanced datasets) in this case (given the hundereds of thousands of observations) it risked over-engineering the split and potentially artificially inflating performance. A random split provided a more robust assssment of generalisability. 
 
 
 **1.** Firstly established a baseline accuracy by **selecting** the most appropriate **features** to include in the model - aiming to balance accuracy with minimal complexity. I ran initial models that isolated 3 key *types* of predictor varaibles in turn - examining feature importance each time:
