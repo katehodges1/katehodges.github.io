@@ -83,9 +83,9 @@ Due to technical restraints with setting up virtual environments on the remote d
 
 
 1. Firstly established a baseline accuracy by **selecting** the most appropriate **features** to include in the model - aiming to balance accuracy with minimal complexity. I ran initial models that isolated 3 key *types* of predictor varaibles in turn - examining feature importance each time:
-    - *time variables* (month, day of week, hour)
-    - *weather variables* (precipitation, temperature)
-    - *spatial variables* (presence of benches, grass, woodland, water, paths, sports facilities, attractions, cafes, distance from park perimeter)
+    - *Time variables* (month, day of week, hour)
+    - *Weather variables* (precipitation, temperature)
+    - *Spatial variables* (presence of benches, grass, woodland, water, paths, sports facilities, attractions, cafes, distance from park perimeter)
     
    *Without including a combination of variables from all 3 variable types, initial runs performed poorly - successfully capturing just 16% of variation in the data (including temporal variables alone), and 66% for spatial variables only - which is slightly better but still equates to a RMSE of 300 (significant considering that cells pretty rarely exceed 305 visitors in an hour)*
       
