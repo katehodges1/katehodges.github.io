@@ -83,23 +83,23 @@ Due to technical restraints with setting up virtual environments on the remote d
 
 
 1. Firstly established a baseline accuracy by **selecting** the most appropriate **features** to include in the model - aiming to balance accuracy with minimal complexity. I ran initial models that isolated 3 key *types* of predictor varaibles in turn - examining feature importance each time:
-       - *time variables* (month, day of week, hour)
-       - *weather variables* (precipitation, temperature)
-       - *spatial variables* (presence of benches, grass, woodland, water, paths, sports facilities, attractions, cafes, distance from park perimeter)
+- *time variables* (month, day of week, hour)
+- *weather variables* (precipitation, temperature)
+- *spatial variables* (presence of benches, grass, woodland, water, paths, sports facilities, attractions, cafes, distance from park perimeter)
     
    *Without including a combination of variables from all 3 variable types, initial runs performed poorly - successfully capturing just 16% of variation in the data (including temporal variables alone), and 66% for spatial variables only - which is slightly better but still equates to a RMSE of 300 (significant considering that cells pretty rarely exceed 305 visitors in an hour)*
       
 2. Initially I included all cells that covered the Heath in any amount - to see how well the model might be able to account for 'noise' external to the park, with a variable capturing the % of the cell's area that was non park, and the length of any road passing through it. With this noise in the data, I struggled to improve predictive accuracy beyond 70%
-        - Before the train-test split occured, I went back and removed any cell containing road, and any cell containing > 10% land that was non park.
-        - Performance immediately jumped to 82% from here (RMSE down to 22).
+- Before the train-test split occured, I went back and removed any cell containing road, and any cell containing > 10% land that was non park.
+- Performance immediately jumped to 82% from here (RMSE down to 22).
 
     * If I further quantified the spatial features external to the park this likely wouldn't be a neccessary step. If we were trying to predict footfall for urban areas a whole though, it would also require careful consideration of another set of predictor variables (such as school dropoff times, type of road, classified as residential etc, taking account of trainlines). Given that the predictors in this dataset were devised specifically with parks in mind (and based on my own observations of movement across the space), it makes sense that these cells introduced noise, and predictions drastically improved on their removal.
 
 
 3. The final step was to **tune hyperparameters**. I experimented with:
-       - Number of **trees**:
-       - Minimum **node size**: 
-       - Number of **features** considered at each **split**
+- Number of **trees**:
+- Minimum **node size**: 
+- Number of **features** considered at each **split**
 
  
 ### The Final Dashboard.
