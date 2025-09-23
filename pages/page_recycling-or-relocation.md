@@ -1,7 +1,7 @@
 # Recycling or Relocation?
 #### A 5 part Map Series which highlights the little-known reality of UK plastic waste: genuine recycling is far less common than it might be assumed. By tracing plastic waste from a national (UK) to global scale, it illuminates how our individual actions and choices are fundamentally connected to global environmental issues - despite it being easy to feel disconnected at times.
 
-** brief technical/ methodological introduction **
+To produce the following output, I used a combination of ArcGIS, QGIS & R Studio for extensive data cleaning & compilation, geoprocessing and visualisations; stitching the final story together on powerpoint.
 
 <img src="https://raw.githubusercontent.com/katehodges1/katehodges.github.io/main/assets/img/data-story-a.png" alt="Introduction" width="1000" />
 <img src="https://raw.githubusercontent.com/katehodges1/katehodges.github.io/main/assets/img/data-story-b.png" alt="Map 1" width="1000" />
