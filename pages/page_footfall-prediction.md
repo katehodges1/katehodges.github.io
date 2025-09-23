@@ -50,40 +50,60 @@ Historical hourly weather records were downloaded in batches from [VisualCrossin
 **Overview**: Following extensive EDA which formed the bulk of the dissertation, Random Forest model was used to make predictions for the R Shiny dashboard.
 
 ### Exploratory Analysis
-[link to code here](https://github.com/katehodges1/katehodges.github.io/main/Predicting-Hampstead-Heath-Footfall)
-- KEY GRAPHS FROM DISS
-<img src="https://raw.githubusercontent.com/katehodges1/katehodges.github.io/main/assets/img/dashboard/overall-visitation-plot.png" alt="overall visit plot" width="500" />
-<img src="https://raw.githubusercontent.com/katehodges1/katehodges.github.io/main/assets/img/dashboard/weather-scatters.png" alt="weather scatters" width="500" />
-- HIERARCHICAL CLUSTERING
-    - *from this, it was clear that areas with similar spatial features exhibited similar visitation regimes -     distinct between groups (formed good clusters - obvious that spatial features must be included in any good model)*
-- main quirk of the data??? → considerations to take forwards to predictive modelling
-  - discrepancy in reporting of cross country event...
+You can view the full code [here](https://github.com/katehodges1/katehodges.github.io/main/Predicting-Hampstead-Heath-Footfall/preprocessing)
+
+<p align='center'>
+    <img src="https://raw.githubusercontent.com/katehodges1/katehodges.github.io/main/assets/img/dashboard/overall-visitation-plot.png" alt="overall visit plot" width="500" />
+    <img src="https://raw.githubusercontent.com/katehodges1/katehodges.github.io/main/assets/img/dashboard/weather-scatters.png" alt="weather scatters" width="500" />
+</p>
+
+*(plots taken from dissertation)*
+
+- Clear seasonal and weekly patterns emerged from the data: a strong upturn in visits at the turn of August & consistent weekend daytime peaks
+      - Interesting spike on the second weekend of October, and absence of weekend uplift mid-November 
+    
+- Temperature and Precipitation exhibit the strongest potential relationship with footfall
+- Visits taper off less dramatically with increased windspeeds, whilst cloud cover doesn't appear to exhibit a relationship
+
+In my dissertation, I also applied a **hierarchical clustering** algorithm to the data (*Ward's Agglomerative Linkage method*). From this, it was clear that areas with similar spatial features exhibited similar visitation regimes that were distinct between identified clusters - therefore it was obvious that spatial features needed to be included in any good predictive model.
+  
 
 ### Devising a Predictive Model
-[link to code here](link/to/code)
+You can view the full code [here](https://github.com/katehodges1/katehodges.github.io/main/Predicting-Hampstead-Heath-Footfall)
 
-Random forest model selected because...
+Random Forest model was selected for this task due to its ability to capture complex, non-linear relationships.
 
 #### Tracking Experiments
-This analysis was done using R - due to technical restraints of accessing Python and setting up virtual environments on remote desktop connection that was required for sufficient computing power to handle the dataset.
-  - *step 1 was to write a [tracking function](https://github.com/katehodges1/katehodges.github.io/main/Predicting-Hampstead-Heath-Footfall/utils) that emulated function of Python's MLflow*
+Due to technical restraints with setting up virtual environments on the remote desktop I was working on (required for sufficient computing power to handle the dataset), this ML model was built using R (my first and likely last experience doing so: though its possible in R, I found that Python syntax definitely lends itself more intuitively to ML!) 
+
+  → *step 1 was to write a [tracking function](https://github.com/katehodges1/katehodges.github.io/main/Predicting-Hampstead-Heath-Footfall/utils) that emulated function of Python's MLflow*
     
 #### Approach to modelling
-- just weather, just physical, then combined
-- had to remove any cells where more than x% contained non park 
-    - this massively improved performance - removed additional noise (bc i hadnt quantified features external to the park beyond simply being 'non park'
-    - **perhaps if i classified the spatial features external to the park then this could be improved… / the
-      selection of weather as cruical predictor variables was from extensively consulting the literature… if
-      prediciton task weas being done for more urban areas, would have to think carefully about which sort of
-      predictors u would use…( like school dropoff times, type of road, classified as residential etc, taking
-      account of trainline….)**
-    - **but since this exercise/ dataset was designed with parks in mind (and from my own observations of human
-      movement in that space), kept just to predictors that were going to be relevant to the park…..**
+→ I took a random 80/20 train test split. Whilst I considered stratification (which can be useful particularly on smaller or highly imbalanced datasets) in this case (given the hundereds of thousands of observations) it risked over-engineering the split and potentially artificially inflating performance. A random split provided a more robust assssment of generalisability. 
 
-- once best combination of features selected for modelling, hyperparameter tuning..
-    - *manually, because of computing constrains w gridsearch or CV*
+
+1. Firstly established a baseline accuracy by **selecting** the most appropriate **features** to include in the model - aiming to balance accuracy with minimal complexity. I ran initial models that isolated 3 key *types* of predictor varaibles in turn - examining feature importance each time:
+       - *time variables* (month, day of week, hour)
+       - *weather variables* (precipitation, temperature)
+       - *spatial variables* (presence of benches, grass, woodland, water, paths, sports facilities, attractions, cafes, distance from park perimeter)
+    
+   *Without including a combination of variables from all 3 variable types, initial runs performed poorly - successfully capturing just 16% of variation in the data (including temporal variables alone), and 66% for spatial variables only - which is slightly better but still equates to a RMSE of 300 (significant considering that cells pretty rarely exceed 305 visitors in an hour)*
+      
+2. Initially I included all cells that covered the Heath in any amount - to see how well the model might be able to account for 'noise' external to the park, with a variable capturing the % of the cell's area that was non park, and the length of any road passing through it. With this noise in the data, I struggled to improve predictive accuracy beyond 70%
+        - Before the train-test split occured, I went back and removed any cell containing road, and any cell containing > 10% land that was non park.
+        - Performance immediately jumped to 82% from here (RMSE down to 22).
+
+    * If I further quantified the spatial features external to the park this likely wouldn't be a neccessary step. If we were trying to predict footfall for urban areas a whole though, it would also require careful consideration of another set of predictor variables (such as school dropoff times, type of road, classified as residential etc, taking account of trainlines). Given that the predictors in this dataset were devised specifically with parks in mind (and based on my own observations of movement across the space), it makes sense that these cells introduced noise, and predictions drastically improved on their removal.
+
+
+3. The final step was to **tune hyperparameters**. I experimented with:
+       - Number of **trees**:
+       - Minimum **node size**: 
+       - Number of **features** considered at each **split**
+
  
-### final dashboard...
+### The Final Dashboard.
+
 
 
 
