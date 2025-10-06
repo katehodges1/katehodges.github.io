@@ -3,12 +3,11 @@
 *In this project, I build an interactive dashboard which predicts footfall across Hampstead Heath under user specified weather and time conditions - utilising a  mobile phone derived human location dataset and a Random Forest machine learning algorithm.*
 
 
-** The Problem Space & Motivations for Tackling it **
+**The Problem Space & Motivations for Tackling it**
 This project builds on my dissertation work - a topic I chose because it enabled me to combine my passion for the outdoors with data science, whilst getting the chance to work with an exciting form of 'big data', that is increasingly central to decision making. 
 
 Whilst my dissertation was an extensive exploratory analysis of the merits of big data versus other more traditional research methods (namely in person observations), I wanted to push the potentials of the dataset further, to explore more complex modelling might be applied, to enable the creation of a tool that could aid future planning/ logistics.
 
-Whilst the application to greenspaces in this way is addmitedly niche, ...
 
 <br>
 ---
