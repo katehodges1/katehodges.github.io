@@ -89,7 +89,7 @@ Due to technical restraints with setting up virtual environments on the remote d
 
     
 #### Approach to modelling
-**→** I took a random 80/20 train test split. Whilst I considered stratification (which can be useful particularly on smaller or highly imbalanced datasets) in this case (given the hundereds of thousands of observations) it risked over-engineering the split and potentially artificially inflating performance. A random split provided a more robust assssment of generalisability. 
+**→** I took a random 80/20 train test split. Whilst I considered stratification (which can be useful particularly on smaller or highly imbalanced datasets) in this case (given the hundereds of thousands of observations) a random split provided a good baseline accuracy - though a temporal or spatial stratification would be a useful next step. 
 
 
 **1.** Firstly established a baseline accuracy by **selecting** the most appropriate **features** to include in the model - aiming to balance accuracy with minimal complexity. I ran initial models that isolated 3 key *types* of predictor varaibles in turn - examining feature importance each time:  
