@@ -1,15 +1,20 @@
 # Forecasting Footfall on Hampstead Heath
 
-### Description
-**Using a mobile phone derived human locaiton dataset, random forest model & interactive R Shiny dashboard to forecast footfall on Hampstead Heath under specified time & wather conditions.**
+*In this project, I build an interactive dashboard which predicts footfall across Hampstead Heath under user specified weather and time conditions - utilising a  mobile phone derived human location dataset and a Random Forest machine learning algorithm.*
 
 
-### The Problem Space & Motivations for Tackling it
-I chose this topic because I wanted to combine my passion for the outdoors with data science, and mobile phone location data is increasingly central to business decisions and planning, so I was excited to get some hands on experience with it. 
+** The Problem Space & Motivations for Tackling it **
+This project builds on my dissertation work - a topic I chose because it enabled me to combine my passion for the outdoors with data science, whilst getting the chance to work with an exciting form of 'big data', that is increasingly central to decision making. 
 
-Whilst my dissertation was an extensive exploratory analysis, and an in depth look at the merits of big data versus other more traditional research methods (namely in person observations), I wanted to push the potentials of the dataset further, to explore how more complex modelling might be applied, to enable the dataset to serve as a tool that could aid future planning/ logistics/ resource allocation etc.
+Whilst my dissertation was an extensive exploratory analysis of the merits of big data versus other more traditional research methods (namely in person observations), I wanted to push the potentials of the dataset further, to explore more complex modelling might be applied, to enable the creation of a tool that could aid future planning/ logistics.
 
-## The Data
+Whilst the application to greenspaces in this way is addmitedly niche, ...
+
+<br>
+---
+
+
+## The Data:
 Data for this project was compiled from **3 key sources** joined and cleaned in R [*(see code for this workflow here)*](https://github.com/katehodges1/katehodges.github.io/main/Predicting-Hampstead-Heath-Footfall/preprocessing):
 
 
@@ -85,24 +90,28 @@ Due to technical restraints with setting up virtual environments on the remote d
 **→** I took a random 80/20 train test split. Whilst I considered stratification (which can be useful particularly on smaller or highly imbalanced datasets) in this case (given the hundereds of thousands of observations) it risked over-engineering the split and potentially artificially inflating performance. A random split provided a more robust assssment of generalisability. 
 
 
-**1.** Firstly established a baseline accuracy by **selecting** the most appropriate **features** to include in the model - aiming to balance accuracy with minimal complexity. I ran initial models that isolated 3 key *types* of predictor varaibles in turn - examining feature importance each time:\n
-&nbsp;&nbsp;&nbsp;&nbsp;- *Time variables* (month, day of week, hour)\n
-&nbsp;&nbsp;&nbsp;&nbsp; - *Weather variables* (precipitation, temperature)\n
-&nbsp;&nbsp;&nbsp;&nbsp; - *Spatial variables* (presence of benches, grass, woodland, water, paths, sports facilities, attractions, cafes, distance from park perimeter)
+**1.** Firstly established a baseline accuracy by **selecting** the most appropriate **features** to include in the model - aiming to balance accuracy with minimal complexity. I ran initial models that isolated 3 key *types* of predictor varaibles in turn - examining feature importance each time:  
+
+    - *Time variables* (month, day of week, hour)  
+    - *Weather variables* (precipitation, temperature)  
+    - *Spatial variables* (presence of benches, grass, woodland, water, paths, sports facilities, attractions, cafes, distance from park perimeter)
+
     
-   *Without including a combination of variables from all 3 variable types, initial runs performed poorly - successfully capturing just 16% of variation in the data (including temporal variables alone), and 66% for spatial variables only - which is slightly better but still equates to a RMSE of 300 (significant considering that cells pretty rarely exceed 305 visitors in an hour)*
+    *Without including a combination of variables from all 3 variable types, initial runs performed poorly - successfully capturing just 16% of variation in the data (including temporal variables alone), and 66% for spatial variables only - which is slightly better but still equates to a RMSE of 300 (significant considering that cells pretty rarely exceed 305 visitors in an hour)*    
       
-**2.** Initially I included all cells that covered the Heath in any amount - to see how well the model might be able to account for 'noise' external to the park, with a variable capturing the % of the cell's area that was non park, and the length of any road passing through it. With this noise in the data, I struggled to improve predictive accuracy beyond 70%
-&nbsp;&nbsp;&nbsp;&nbsp;- Before the train-test split occured, I went back and removed any cell containing road, and any cell containing > 10% land that was non park.\n
-&nbsp;&nbsp;&nbsp;&nbsp; - Performance immediately jumped to 82% from here (RMSE down to 22).\n
+**2.** Initially I included all cells that covered the Heath in any amount - to see how well the model might be able to account for 'noise' external to the park, with a variable capturing the % of the cell's area that was non park, and the length of any road passing through it. With this noise in the data, I struggled to improve predictive accuracy beyond 70%  
 
-&nbsp;&nbsp;&nbsp;&nbsp;*If I further quantified the spatial features external to the park this likely wouldn't be a neccessary step. If we were trying to predict footfall for urban areas a whole though, it would also require careful consideration of another set of predictor variables (such as school dropoff times, type of road, classified as residential etc, taking account of trainlines). Given that the predictors in this dataset were devised specifically with parks in mind (and based on my own observations of movement across the space), it makes sense that these cells introduced noise, and predictions drastically improved on their removal.*
+    - Before the train-test split occured, I went back and removed any cell containing road, and any cell containing > 10% land that was non park.
+    - Performance immediately jumped to 82% from here (RMSE down to 22).
+
+    *If I further quantified the spatial features external to the park this likely wouldn't be a neccessary step. If we were trying to predict footfall for urban areas a whole though, it would also require careful consideration of another set of predictor variables (such as school dropoff times, type of road, classified as residential etc, taking account of trainlines). Given that the predictors in this dataset were devised specifically with parks in mind (and based on my own observations of movement across the space), it makes sense that these cells introduced noise, and predictions drastically improved on their removal.*
 
 
-**3.** The final step was to **tune hyperparameters**. I experimented with:\n
-&nbsp;&nbsp;&nbsp;&nbsp;- Number of **trees**: Results stabilised at **50 trees** - no real prediction preformance improvement beyond this, to warrant additional computation\n
-&nbsp;&nbsp;&nbsp;&nbsp; - Minimum **node size**: Results Stabilised at **3** (cautious of overfitting, I begun by tesing values much higher than this)\n 
-&nbsp;&nbsp;&nbsp;&nbsp; - Number of **features** considered at each **split**: Optimum accuracy scores found at **9** (lowering this number produces greater variation between decision trees in the forest, but can lead to poorer overall predictions if too low as highly influentual predictive features are less likely to be available at a split)
+**3.** The final step was to **tune hyperparameters**. I experimented with:  
+
+    - Number of **trees**: Results stabilised at **50 trees** - no real prediction preformance improvement beyond this, to warrant additional computation
+    - Minimum **node size**: Results Stabilised at **3** (cautious of overfitting, I begun by tesing values much higher than this)\n 
+    - Number of **features** considered at each **split**: Optimum accuracy scores found at **9** (lowering this number produces greater variation between decision trees in the forest, but can lead to poorer overall predictions if too low as highly influentual predictive features are less likely to be available at a split)
 
 
  
