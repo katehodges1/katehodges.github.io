@@ -67,7 +67,7 @@ You can view the full code [here](https://github.com/katehodges1/katehodges.gith
 *(plots taken from dissertation)*
 
  - Clear seasonal and weekly patterns emerged from the data: a strong upturn in visits at the turn of August & consistent weekend daytime peaks
-&nbsp;&nbsp;&nbsp;&nbsp;- Interesting spike on the second weekend of October, and absence of weekend uplift mid-November 
+ - Interesting spike on the second weekend of October, and absence of weekend uplift mid-November (dug into more in dissertation)
     
 - Temperature and Precipitation exhibit the strongest potential relationship with footfall
 - Visits taper off less dramatically with increased windspeeds, whilst cloud cover doesn't appear to exhibit a relationship
