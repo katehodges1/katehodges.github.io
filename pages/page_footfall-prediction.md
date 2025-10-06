@@ -2,14 +2,12 @@
 
 *In this project, I build an interactive dashboard which predicts footfall across Hampstead Heath under user specified weather and time conditions - utilising a  mobile phone derived human location dataset and a Random Forest machine learning algorithm.*
 
-
-**The Problem Space & Motivations for Tackling it**
 This project builds on my dissertation work - a topic I chose because it enabled me to combine my passion for the outdoors with data science, whilst getting the chance to work with an exciting form of 'big data', that is increasingly central to decision making. 
 
 Whilst my dissertation was an extensive exploratory analysis of the merits of big data versus other more traditional research methods (namely in person observations), I wanted to push the potentials of the dataset further, to explore more complex modelling might be applied, to enable the creation of a tool that could aid future planning/ logistics.
 
-
 <br>
+
 ---
 
 
@@ -48,6 +46,11 @@ Historical hourly weather records were downloaded in batches from [VisualCrossin
   </div>
   
   </div>
+
+
+
+<br>
+
 
 
 ## Methodology
@@ -112,6 +115,8 @@ Due to technical restraints with setting up virtual environments on the remote d
 - Minimum **node size**: Results Stabilised at **3** (cautious of overfitting, I begun by tesing values much higher than this)\n 
 - Number of **features** considered at each **split**: Optimum accuracy scores found at **9** (lowering this number produces greater variation between decision trees in the forest, but can lead to poorer overall predictions if too low as highly influentual predictive features are less likely to be available at a split)
 
+
+<br>
 
  
 ### The Final Dashboard.
