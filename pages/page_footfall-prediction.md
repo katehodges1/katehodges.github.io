@@ -10,7 +10,7 @@ I chose this topic because I wanted to combine my passion for the outdoors with 
 Whilst my dissertation was an extensive exploratory analysis, and an in depth look at the merits of big data versus other more traditional research methods (namely in person observations), I wanted to push the potentials of the dataset further, to explore how more complex modelling might be applied, to enable the dataset to serve as a tool that could aid future planning/ logistics/ resource allocation etc.
 
 ## The Data
-Data for this project was compiled from **3 key sources** joined and cleaned in R [*(see code for this workflow here)*]([link/to/code](https://github.com/katehodges1/katehodges.github.io/main/Predicting-Hampstead-Heath-Footfall/preprocessing):
+Data for this project was compiled from **3 key sources** joined and cleaned in R [*(see code for this workflow here)*](https://github.com/katehodges1/katehodges.github.io/main/Predicting-Hampstead-Heath-Footfall/preprocessing):
 
 
 #### 1. *Footfall Data*
