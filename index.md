@@ -13,7 +13,7 @@ If you're interested, click on a project title to find out more, and visit my Gi
 ### [Predicting Footfall on Hampstead Heath](/pages/page_footfall-prediction.md)
 Big Data | Random Forest | RShiny Dashboard 
 
-![Dashboard Screenshot](assets/img/main-dashboard-screenshot.png)
+![Dashboard Screenshot](assets/img/main-dashboard-img.png)
 
 ---
 
