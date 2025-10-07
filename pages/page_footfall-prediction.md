@@ -119,7 +119,8 @@ Due to technical restraints with setting up virtual environments on the remote d
 
  
 ### The Final Dashboard.
+
 <img src="https://raw.githubusercontent.com/katehodges1/katehodges.github.io/main/assets/img/dashboard/multi-dashboard-screenshots.png" alt="dashboard-screenshot" width="700" />
 
-
+Due to the large model size, the dashboard currently exceeds limits of the free plan offered by R Shiny.io, so screenshots are included here, but hosting this publicly would be the next steps.
 
