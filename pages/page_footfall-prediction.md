@@ -120,7 +120,7 @@ Due to technical restraints with setting up virtual environments on the remote d
 
  
 ### The Final Dashboard.
-<img src="https://raw.githubusercontent.com/katehodges1/katehodges.github.io/main/assets/img/dashboard/multi-dashboard-screenshot.png" alt="dashboard-screenshot" width="700" />
+<img src="https://raw.githubusercontent.com/katehodges1/katehodges.github.io/main/assets/img/dashboard/multi-dashboard-screenshots.png" alt="dashboard-screenshot" width="700" />
 
 
 
