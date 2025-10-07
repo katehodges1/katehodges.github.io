@@ -1,4 +1,4 @@
-# Geospatial Data Scientist |<span style="color:grey"> UCL Geography Graduate </span>
+# Geospatial Data Scientist <span style="color:grey">| UCL Geography Graduate </span>
 
 As a Geographer, tackling complex, real world problems with a range of interdisciplinary skills has become second nature to me. I’m passionate about blending analytical tools with a touch of design & creativity in order to make sense of the world - harnessing **machine learning**, **geospatial analytics** & **storytelling** to transform messy, complex data into powerful insights!
 
