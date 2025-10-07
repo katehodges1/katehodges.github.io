@@ -4,6 +4,8 @@ As a Geographer, tackling complex, real world problems with a range of interdisc
 
 Welcome to my portfolio, where I’ll be sharing and discussing some of my key Data Science projects. If you're interested, click on a project title to find out more, and visit my GitHub profile to see what I'm currently working on.
 
+---
+
 ## Projects
 ### [Predicting Footfall on Hampstead Heath](/pages/page_footfall-prediction.md)
 Big Data | Random Forest | RShiny Dashboard 
