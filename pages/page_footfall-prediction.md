@@ -42,7 +42,7 @@ Historical hourly weather records were downloaded in batches from [VisualCrossin
   </div>
 
   <div style="flex: 1;">
-    <img src="https://raw.githubusercontent.com/katehodges1/katehodges.github.io/main/assets/img/dashboard/spatial-feature-quantification.png" alt="Example image" style="max-width: 50%; height: auto;"/>
+    <img src="https://raw.githubusercontent.com/katehodges1/katehodges.github.io/main/assets/img/dashboard/spatial-feature-quantification.png" alt="QGIS process image" style="max-width: 50%; height: auto;"/>
   </div>
   
   </div>
@@ -112,7 +112,7 @@ Due to technical restraints with setting up virtual environments on the remote d
 **3.** The final step was to **tune hyperparameters**. I experimented with:  
 
 - Number of **trees**: Results stabilised at **50 trees** - no real prediction preformance improvement beyond this, to warrant additional computation
-- Minimum **node size**: Results Stabilised at **3** (cautious of overfitting, I begun by tesing values much higher than this)\n 
+- Minimum **node size**: Results Stabilised at **3** (cautious of overfitting, I begun by tesing values much higher than this)
 - Number of **features** considered at each **split**: Optimum accuracy scores found at **9** (lowering this number produces greater variation between decision trees in the forest, but can lead to poorer overall predictions if too low as highly influentual predictive features are less likely to be available at a split)
 
 
@@ -120,7 +120,7 @@ Due to technical restraints with setting up virtual environments on the remote d
 
  
 ### The Final Dashboard.
-
+<img src="https://raw.githubusercontent.com/katehodges1/katehodges.github.io/main/assets/img/dashboard/multi-dashboard-screenshot.png" alt="dashboard-screenshot" width="700" />
 
 
 
