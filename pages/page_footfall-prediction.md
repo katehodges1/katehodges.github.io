@@ -57,14 +57,13 @@ Historical hourly weather records were downloaded in batches from [VisualCrossin
 **Overview**: Following extensive EDA which formed the bulk of the dissertation, Random Forest model was used to make predictions for the R Shiny dashboard.
 
 ### Exploratory Analysis
-You can view the full code [here](https://github.com/katehodges1/katehodges.github.io/main/Predicting-Hampstead-Heath-Footfall/preprocessing)
+You can view the full code [here](https://github.com/katehodges1/katehodges.github.io/main/Predicting-Hampstead-Heath-Footfall/preprocessing). The following plots are from my dissertation work.
 
 <p align='center'>
     <img src="https://raw.githubusercontent.com/katehodges1/katehodges.github.io/main/assets/img/dashboard/overall-visitation-plot.png" alt="overall visit plot" width="400" />
     <img src="https://raw.githubusercontent.com/katehodges1/katehodges.github.io/main/assets/img/dashboard/weather-scatters.png" alt="weather scatters" width="400" />
 </p>
 
-*(plots taken from dissertation)*
 
  - Clear seasonal and weekly patterns emerged from the data: a strong upturn in visits at the turn of August & consistent weekend daytime peaks
  - Interesting spike on the second weekend of October, and absence of weekend uplift mid-November (dug into more in dissertation)
