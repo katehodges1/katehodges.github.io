@@ -1,5 +1,5 @@
-# Geospatial Data Scientist <span style="color:grey">| UCL Geography Graduate 
-##### Harnessing machine learning, geospatial analytics & storytelling to transform messy data into powerful insights</span> 
+# Geospatial Data Scientist <span style="color:grey">| UCL Geography Graduate </span> 
+#### <span style="color:grey"> Harnessing machine learning, geospatial analytics & storytelling to transform messy data into powerful insights </span> 
 
 Welcome to my portfolio, where I’ll be sharing and discussing a few of my key projects. 
 
