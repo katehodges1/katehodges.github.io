@@ -1,11 +1,9 @@
 # Geospatial Data Scientist <span style="color:grey">| UCL Geography Graduate </span> 
 #### <span style="color:grey"> Harnessing machine learning, geospatial analytics & storytelling to transform messy data into powerful insights </span> 
 
-Welcome to my portfolio, where I’ll be sharing and discussing a few of my key projects. 
-
 I'm driven by tackling complex, real world problems with a range of interdisciplinary skills honed throughout my Geography degree; passionate about blending analytical tools with a touch of design & creativity in order to make sense of the world.
 
-If you're interested, click on a project title to find out more, and visit my GitHub profile to see what else I'm currently working on.
+Click on a project title to find out more, and visit my GitHub profile to see what else I'm currently working on.
 
 ---
 
